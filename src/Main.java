@@ -2,27 +2,28 @@ public class Main {
     public static void main(String[] args) {
 
         //Задание №1
-        int clientOs = 0;//iOS=0 android=1
-        if (clientOs == 0) {
+        int clientOs = 1;//iOS=1
+        if (clientOs == 1) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
-            System.out.println("Установите версию приложения для Android по ссылке");
+            System.out.println("Установите версию приложения для андроид по ссылке");
         }
 
         //Задание №2
-        int clientOs1 = 1;//iOS=1  android=0
-        int clientDeviceYear = 2015;
+        int clientOs1 = 1;//iOS=0  android=1
+        int clientDeviceYear = 2020;
 
         if (clientOs1 == 0 && clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию приложения для андроид по ссылке");
-        } else if (clientOs1 == 0 && clientDeviceYear >= 2015) {
-            System.out.println("Установите версию приложения для андроид по ссылке");
-        }
-        if (clientOs1 == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOs1 == 1 && clientDeviceYear >= 2015) {
+        } else if (clientOs1 == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
+        if (clientOs1 == 1 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для андроид по ссылке");
+        } else if (clientOs1 == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для андроид по ссылке");
+        }
+
         //Задание №3
         int year = 1988;
         int beginning = 1584;
@@ -35,10 +36,10 @@ public class Main {
         }
 
         //Задание №4
-        int deliveryDistance = 80;
+        int deliveryDistance = 100;
         int day ;
 
-        if (deliveryDistance > 100) {
+        if (deliveryDistance >= 100) {
             System.out.println("доставки нет");
         }
 
@@ -84,6 +85,7 @@ public class Main {
                 break;
             default:
                 System.out.println("введён некорректный номер");
+
 
 
 
