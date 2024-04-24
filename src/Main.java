@@ -7,6 +7,7 @@ public class Main {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
             System.out.println("Установите версию приложения для андроид по ссылке");
+
         }
 
         //Задание №2
