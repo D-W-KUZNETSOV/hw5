@@ -3,7 +3,7 @@ public class Main {
 
         //Задание №1
         int clientOs = 0;//iOS=0
-        if (clientOs == 5) {
+        if (clientOs == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
             System.out.println("Установите версию приложения для андроид по ссылке");
@@ -62,7 +62,7 @@ public class Main {
 
 
         // Задание №5
-        int monthNumber = 17;
+        int monthNumber = 11;
         switch (monthNumber) {
             case 12:
             case 1:
