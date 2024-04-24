@@ -10,17 +10,17 @@ public class Main {
         }
 
         //Задание №2
-        int clientOs1 = 1;//iOS=0  android=1
+        int clientOs1 = 1;//iOS=1  android=0
         int clientDeviceYear = 2015;
-        int year1 = 2015;
-        if (clientOs1 == 0 && clientDeviceYear < year1) {
+
+        if (clientOs1 == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для андроид по ссылке");
-        } else if (clientOs1 == 0 && clientDeviceYear >= year1) {
+        } else if (clientOs1 == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для андроид по ссылке");
         }
-        if (clientOs1 == 1 && clientDeviceYear < year1) {
+        if (clientOs1 == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOs1 == 1 && clientDeviceYear >= year1) {
+        } else if (clientOs1 == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
         //Задание №3
@@ -35,33 +35,32 @@ public class Main {
         }
 
         //Задание №4
-        int deliveryDistance = 35;
-        int d;
-        d = 0;
-        int day = 1;
+        int deliveryDistance = 80;
+        int day ;
 
         if (deliveryDistance > 100) {
             System.out.println("доставки нет");
         }
+
         if (deliveryDistance < 20) {
-            day = d + 1;
+            day = 1;
             System.out.println("потребуется " + day + " дней доставки");
         }
-        day = day + 1;
+
         if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            day = 2;
             System.out.println("потребуется  " + day + " дня доставки");
         }
-        day = day + 1;
+
+
         if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            day = 3;
             System.out.println("потребуется  " + day + " дня доставки");
         }
 
 
         // Задание №5
-        int monthNumber = 6;
-        if (monthNumber > 12) {
-            System.out.println("введён некорректный номер");
-        }
+        int monthNumber = 17;
         switch (monthNumber) {
             case 12:
             case 1:
@@ -82,7 +81,10 @@ public class Main {
             case 10:
             case 11:
                 System.out.println("это осенний месяц");
+                break;
             default:
+                System.out.println("введён некорректный номер");
+
 
 
         }
