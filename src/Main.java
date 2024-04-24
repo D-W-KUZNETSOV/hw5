@@ -62,7 +62,7 @@ public class Main {
 
 
         // Задание №5
-        int monthNumber = 11;
+        int monthNumber = 12;
         switch (monthNumber) {
             case 12:
             case 1:
