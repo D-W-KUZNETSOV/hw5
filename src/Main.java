@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
 
         //Задание №1
-        int clientOs = 1;//iOS=1
-        if (clientOs == 1) {
+        int clientOs = 0;//iOS=0
+        if (clientOs == 5) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
             System.out.println("Установите версию приложения для андроид по ссылке");
